@@ -54,7 +54,7 @@ const NavBar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:p-12 sm:-8 ">
+        <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:p-12 sm:p-8">
             <button
                 className="flex-col justify-center items-center hidden lg:flex"
                 onClick={handleClick}
@@ -122,7 +122,7 @@ const NavBar = () => {
 
                     <button
                         onClick={() => setMode(mode == 'light' ? 'dark' : 'light')}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+                        className={`ml-3 flex items-center justify-center rounded-full p-1 w-6 h-6 ${
                             mode == 'light'
                                 ? 'bg-nightSky text-moonWhite'
                                 : 'bg-daySky text-sunnyYellow'
@@ -155,12 +155,6 @@ const NavBar = () => {
                         <CustomMobileLink
                             href="/projects"
                             title="Projects"
-                            className=""
-                            toggle={handleClick}
-                        />
-                        <CustomMobileLink
-                            href="/articles"
-                            title="Articles"
                             className=""
                             toggle={handleClick}
                         />
@@ -221,7 +215,7 @@ const NavBar = () => {
                 </motion.div>
             ) : null}
 
-            <div className="absolute left-[50%] top-2 translate-x[-50%]">
+            <div className="absolute left-[50%] top-2 translate-x-[-50%]">
                 <Logo />
             </div>
         </header>

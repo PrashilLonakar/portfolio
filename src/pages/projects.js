@@ -29,7 +29,7 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
                 <FramerImage
                     src={img}
                     alt={title}
-                    className="w-full h-96"
+                    className="w-full h-96 sm:h-auto xs:h-auto"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
                     priority
@@ -72,7 +72,7 @@ const Project = ({ title, type, img, link, github }) => {
                 target="_blank"
                 className="w-full cursor-pointer overflow-hidden rounded-lg"
             >
-                <Image src={img} alt={title} className="w-full h-80"></Image>
+                <Image src={img} alt={title} className="w-full h-80 sm:h-auto xs:h-auto"></Image>
             </Link>
             <div className="w-full flex flex-col items-start justify-between mt-4">
                 <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
