@@ -54,7 +54,7 @@ const NavBar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:p-12 sm:p-8">
+        <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:p-12 sm:px-8 sm:py-[2.75rem]">
             <button
                 className="flex-col justify-center items-center hidden lg:flex"
                 onClick={handleClick}
