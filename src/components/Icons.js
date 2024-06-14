@@ -590,11 +590,11 @@ m87 -204 c33 -32 34 -87 3 -109 -36 -25 -73 -20 -102 15 -31 37 -33 58 -5 93
     </svg>
 );
 
-export const LinkArrow = ({ className, ...rest }) => (
+export const LinkArrow = ({ className, height, width, ...rest }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={24}
-        height={24}
+        width={width}
+        height={height}
         viewBox="0 0 24 24"
         className={`w-full h-auto ${className}`}
         {...rest}

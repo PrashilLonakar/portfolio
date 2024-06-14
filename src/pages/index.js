@@ -46,7 +46,12 @@ export default function Home() {
                                     className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark hover:border-dark border-2 border-solid border-transparent  dark:text-dark dark:bg-light hover:dark:text-dark hover:dark:border-light hover:dark:bg-dark hover:dark:text-light md:p-2 md:px-4 md:text-base"
                                     download={true}
                                 >
-                                    Resume <LinkArrow className={'w-6 ml-1'} />
+                                    Resume{' '}
+                                    <LinkArrow
+                                        hieght={'1.625rem'}
+                                        width={'1.625rem'}
+                                        className={'w-6 ml-1'}
+                                    />
                                 </Link>
                                 <Link
                                     href="mailto:prashil.lonakar@gmail.com?subject=Refer%20from%20Portfolio&body=Hello,%20I%20would%20like%20to%20connect%20with%20you%20regarding%20your%20Job%20Application.%0D%0A%0D%0AThank%20you."
