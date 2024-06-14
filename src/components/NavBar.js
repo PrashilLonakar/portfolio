@@ -122,16 +122,20 @@ const NavBar = () => {
 
                     <button
                         onClick={() => setMode(mode == 'light' ? 'dark' : 'light')}
-                        className={`ml-3 flex items-center justify-center rounded-full p-1 w-6 h-6 ${
+                        className={`ml-3 flex items-center justify-center rounded-full p-1 ${
                             mode == 'light'
                                 ? 'bg-nightSky text-moonWhite'
                                 : 'bg-daySky text-sunnyYellow'
                         }`}
                     >
                         {mode == 'dark' ? (
-                            <MoonIcon className={'fill-dark'} />
+                            <MoonIcon
+                                hieght={'1.25rem'}
+                                width={'1.25rem'}
+                                className={'fill-dark'}
+                            />
                         ) : (
-                            <SunIcon className={'fill-dark'} />
+                            <SunIcon hieght={'1.25rem'} width={'1.25rem'} className={'fill-dark'} />
                         )}
                     </button>
                 </nav>
@@ -206,9 +210,17 @@ const NavBar = () => {
                             }`}
                         >
                             {mode == 'dark' ? (
-                                <MoonIcon className={'fill-dark'} />
+                                <MoonIcon
+                                    hieght={'1.2rem'}
+                                    width={'1.2rem'}
+                                    className={'fill-dark'}
+                                />
                             ) : (
-                                <SunIcon className={'fill-dark'} />
+                                <SunIcon
+                                    hieght={'1.2rem'}
+                                    width={'1.2rem'}
+                                    className={'fill-dark'}
+                                />
                             )}
                         </button>
                     </nav>
