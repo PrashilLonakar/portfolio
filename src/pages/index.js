@@ -48,7 +48,7 @@ export default function Home() {
                                 >
                                     Resume{' '}
                                     <LinkArrow
-                                        hieght={'1.625rem'}
+                                        height={'1.625rem'}
                                         width={'1.625rem'}
                                         className={'w-6 ml-1'}
                                     />
