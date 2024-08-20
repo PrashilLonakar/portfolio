@@ -130,12 +130,12 @@ const NavBar = () => {
                     >
                         {mode == 'dark' ? (
                             <MoonIcon
-                                hieght={'1.25rem'}
+                                height={'1.25rem'}
                                 width={'1.25rem'}
                                 className={'fill-dark'}
                             />
                         ) : (
-                            <SunIcon hieght={'1.25rem'} width={'1.25rem'} className={'fill-dark'} />
+                            <SunIcon height={'1.25rem'} width={'1.25rem'} className={'fill-dark'} />
                         )}
                     </button>
                 </nav>
