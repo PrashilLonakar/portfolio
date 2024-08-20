@@ -121,6 +121,7 @@ const NavBar = () => {
                     </motion.a>
 
                     <button
+                        style={{ width: '1.68rem' }}
                         onClick={() => setMode(mode == 'light' ? 'dark' : 'light')}
                         className={`ml-3 flex items-center justify-center rounded-full p-1 ${
                             mode == 'light'
@@ -202,6 +203,7 @@ const NavBar = () => {
                         </motion.a>
 
                         <button
+                            style={{ width: '1.68rem' }}
                             onClick={() => setMode(mode == 'light' ? 'dark' : 'light')}
                             className={`ml-3 flex items-center justify-center rounded-full p-1 ${
                                 mode == 'light'
