@@ -211,13 +211,13 @@ const NavBar = () => {
                         >
                             {mode == 'dark' ? (
                                 <MoonIcon
-                                    hieght={'1.2rem'}
+                                    height={'1.2rem'}
                                     width={'1.2rem'}
                                     className={'fill-dark'}
                                 />
                             ) : (
                                 <SunIcon
-                                    hieght={'1.2rem'}
+                                    height={'1.2rem'}
                                     width={'1.2rem'}
                                     className={'fill-dark'}
                                 />
