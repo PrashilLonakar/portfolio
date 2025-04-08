@@ -50,6 +50,9 @@ const NavBar = () => {
     const [mode, setMode] = useThemeSwitcher();
     const [isOpen, setIsOpen] = useState(false);
 
+    const router = useRouter();
+    const currentPath = router.pathname.replace('/', '') || 'home';
+
     const handleClick = () => {
         setIsOpen(!isOpen);
     };
@@ -77,7 +80,14 @@ const NavBar = () => {
             </button>
             <div className="w-full flex justify-between items-center lg:hidden">
                 <nav>
-                    <CustomLink href="/" title="Home" className="mr-4" />
+                    <CustomLink
+                        href={{
+                            pathname: '/home',
+                            query: { backTo: currentPath }, // Dynamically add query param
+                        }}
+                        title="Home"
+                        className="mr-4"
+                    />
                     <CustomLink href="/about" title="About" className="mx-4" />
                     <CustomLink href="/projects" title="Projects" className="mx-4" />
                     {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
@@ -150,7 +160,15 @@ const NavBar = () => {
                     exit={{ opacity: 0 }}
                 >
                     <nav className="flex flex-col items-center justify-center">
-                        <CustomMobileLink href="/" title="Home" className="" toggle={handleClick} />
+                        <CustomMobileLink
+                            href={{
+                                pathname: '/home',
+                                query: { backTo: currentPath }, // Dynamically add query param
+                            }}
+                            title="Home"
+                            className=""
+                            toggle={handleClick}
+                        />
                         <CustomMobileLink
                             href="/about"
                             title="About"
