@@ -17,7 +17,6 @@ export default function Home() {
     const backTo = router.query.backTo;
     useEffect(() => {
         if (backTo) {
-            console.log('User came back from:', backTo);
         }
     }, [backTo]);
     return (
