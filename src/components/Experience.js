@@ -52,11 +52,18 @@ const Experience = () => {
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
                     <Details
+                        position="Software Developer manager"
+                        company="Bajaj Finserv"
+                        time="nov 2024 - present"
+                        address="Pune, Maharastra."
+                        work="As a SDM (Tech Lead), I led a cross-functional team in designing and implementing a scalable Onboarding Micro-frontend Webform, where I spearheaded a successful Module Federation proof of concept (POC) for Single Sign-On (SSO) with a shared access token strategy. I played a key role in the architecture design, development, and integration of the Micro-frontend using Webpack Module Federation, which was reviewed and approved by stakeholders across teams"
+                    />
+                    <Details
                         position="Senior Software Engineer"
                         company="Orangebits"
-                        time="june 2023 - Present"
+                        time="june 2023 - nov 2024"
                         address="Nagpur, Maharastra."
-                        work="Worked and leaded on a team, responsible for developing new application for orangebits client. Ensure seamless communication between client-side and server-side with provided bugless, better efficiency and high quality products."
+                        work="Worked as a solo SSE and Team Lead, responsible for developing a new application for the OrangeBits client. Ensured seamless communication between the client-side and server-side, delivering bug-free, efficient, and high-quality products."
                     />
                     <Details
                         position="Software Engineer"
